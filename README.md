@@ -1,70 +1,144 @@
-# Getting Started with Create React App
+# College Event Management Site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a **MERN stack application** designed to manage college events. The platform includes features like a gallery page for showcasing memories, a contact and about page for platform information, and a notifications page for event updates.
+
+## Features
+
+### Gallery Page (`/gallery`)
+- Browse photos and videos by category or year.
+- Highlight event memories and winners.
+
+### Contact Page (`/contact`)
+- Displays contact information: email, phone, and address.
+- Allows users to submit inquiries via a contact form.
+
+### About Page (`/about`)
+- Provides information about the platform and its purpose.
+
+### Notifications Page (`/notifications`)
+- Displays event updates, reminders, and announcements.
+- Includes optional features like toast popups and email alerts.
+
+---
+
+## Getting Started
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/099anshu/college-event-management-site.git
+   cd college-event-management-site
+   ```
+
+2. Install dependencies for both the backend and frontend:
+   ```bash
+   cd backend
+   npm install
+   cd ../frontend
+   npm install
+   ```
+
+### Running the App
+1. Start the backend server:
+   ```bash
+   cd backend
+   npm start
+   ```
+
+2. Start the frontend development server:
+   ```bash
+   cd frontend
+   npm start
+   ```
+
+3. Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
+
+---
 
 ## Available Scripts
 
-In the project directory, you can run:
+### Backend
+- `npm start`: Starts the backend server.
+- `npm run dev`: Starts the backend server in development mode with hot reload.
 
-### `npm start`
+### Frontend
+- `npm start`: Starts the frontend development server.
+- `npm run build`: Builds the frontend for production.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Folder Structure
 
-### `npm test`
+```
+college-event-management-site/
+├── backend/
+│   ├── models/           # Database models (e.g., Gallery, Notification)
+│   ├── routes/           # API routes
+│   ├── server.js         # Backend server entry point
+├── frontend/
+│   ├── src/
+│   │   ├── components/   # React components (GalleryPage, ContactPage, etc.)
+│   │   ├── App.js        # Main React app
+│   ├── public/           # Public assets
+│   ├── package.json      # Frontend dependencies
+├── README.md             # Project documentation
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Technologies Used
+### Frontend
+- React.js
+- Axios (for API calls)
+- React Router (for navigation)
+- React Hot Toast (for toast notifications)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Backend
+- Node.js
+- Express.js
+- MongoDB (via Mongoose)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Deployment
+1. Build the frontend:
+   ```bash
+   cd frontend
+   npm run build
+   ```
 
-### `npm run eject`
+2. Deploy the `build` folder to any static hosting service (e.g., Netlify, Vercel).
+3. Deploy the backend server to a platform like Heroku or AWS.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
 ## Learn More
+- [React Documentation](https://reactjs.org/)
+- [MERN Stack Overview](https://www.mongodb.com/mern-stack)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/new-feature
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add new feature"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/new-feature
+   ```
+5. Open a pull request.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This project is licensed under the MIT License. See the `LICENSE` file for details.
